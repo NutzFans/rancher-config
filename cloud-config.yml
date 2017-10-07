@@ -1,0 +1,14 @@
+#Hostname Config
+hostname: rancher-os
+#Network Config
+rancher:
+        network:
+                interfaces:
+                        eth0:
+                                address: 192.168.1.250/24
+                                gateway: 192.168.1.1
+                                mtu: 1500
+                                dhcp: false
+#SSH Key Config
+ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEbGfOZjHKGfI5uG+qyxgUp+H5M+V2JFIU9YpdAQgvMue9CUlTn+c39N2v1lm5LktR6sAsf64ulSw2tjZheEo/eoUVW24Y5YEloQ40FUa9Ad/kgkTV9YmAS+ROYIaaWLgHZXxBPELA/DleAsJ9eBp5kC4AY0uJxR8OkEzOf1m9dyI97Bi5HraCKU3NPJ9lseJI/631tW0p6dwMHc3BleqjUwU2HLgBWta7AjRMCHoIqTj+UBgFWLR45Sla/HfU/EAVlhocmQAJN4Mw5FxH1i32BLziGPZ/wxPDRWDhjqZc1WC/cXuIUkdbiS4HhTNlJz/sIvPDjG6+7NJi+jtmZ8GH rancher@192.168.1.250
