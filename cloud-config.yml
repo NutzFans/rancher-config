@@ -1,7 +1,14 @@
 #Hostname Config
-hostname: rancher-os
-#Network Config
+hostname: Rancher
 rancher:
+        #Docker Config
+        bootstrap_docker:
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        docker: 
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        system_docker:
+                registry_mirror: https://qi1w8946.mirror.aliyuncs.com
+        #Network Config
         network:
                 interfaces:
                         eth0:
@@ -11,4 +18,4 @@ rancher:
                                 dhcp: false
 #SSH Key Config
 ssh_authorized_keys:
-        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEbGfOZjHKGfI5uG+qyxgUp+H5M+V2JFIU9YpdAQgvMue9CUlTn+c39N2v1lm5LktR6sAsf64ulSw2tjZheEo/eoUVW24Y5YEloQ40FUa9Ad/kgkTV9YmAS+ROYIaaWLgHZXxBPELA/DleAsJ9eBp5kC4AY0uJxR8OkEzOf1m9dyI97Bi5HraCKU3NPJ9lseJI/631tW0p6dwMHc3BleqjUwU2HLgBWta7AjRMCHoIqTj+UBgFWLR45Sla/HfU/EAVlhocmQAJN4Mw5FxH1i32BLziGPZ/wxPDRWDhjqZc1WC/cXuIUkdbiS4HhTNlJz/sIvPDjG6+7NJi+jtmZ8GH rancher@192.168.1.250
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCb6QRkh9axwoXA/IZkw1B3L083Uh9MKSGzoMGJVXHea12pKrL4TqGecAnVQaTGYgmaUCHFzXr3kj8xkKiNJnhBOqOeoLOvEm3XsGFkdwmZa1A/oNU+9+o/8JUB3Ds0OJQMD/QthTLYnJD2ib/94aAJ+9+FDd5zKFnhxTu9Iy1UBgHDplMXLYwzcK+5gaWidkkKWk7hZ9izZbAu1L2rKElySmSybxhtRI99Ta7wMJMpm5ufjKbUBclqEZ55Z33V7aBl7BkJcp4+elg6KC99WYVSkrG7DnFYQ8Ph030Jr9qp8bRmgfwK9nWu56NkkhXIsgvonWGIAo5NgUXtoJeXpVbv Administrator@PC-RecallCode
