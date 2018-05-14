@@ -1,4 +1,4 @@
-hostname: rancher_service
+hostname: database_server
 rancher:
   bootstrap_docker:
     registry_mirror: https://qi1w8946.mirror.aliyuncs.com
